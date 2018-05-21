@@ -19,15 +19,39 @@
 <body background="bgimage.html">
 
 
-  <div class="topnav">
-    <a href="../index.html">Home</a>
-      <a href="../media/index.html">Lifestyle</a>
-    <a href="../contact/index.html">Contact</a>
-    <a href="https://soundcloud.com/isak-larsson-14/welcome">Song Of The Week</a>
-    <a href="../about/index.html">About</a>
+  <div class="navbar">
+      <a href="../index.html">Home</a>
+    <a href="../media/index.html">Lifestyle</a>
+    <a href="index.html">Contact</a>
+    <a href="https://www.youtube.com/watch?v=VYOjWnS4cMY">Song Of The Week</a>
 
-</div>
 
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">About
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="../about/index.html">About page</a>
+          <a href="https://soundcloud.com/isak-larsson-14">Aspen's soundcloud</a>
+      </div>
+      </div>
+      </div>
+
+      <script>
+      function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+
+      window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+      }
+      }
+      </script>
 
 <center> <h1 >Lifestyle</h1> </center>
 
@@ -82,11 +106,7 @@
    allow="autoplay; encrypted-media" width="700" height="450"></iframe>
   </div>
 
-  <h4>This document was last modified <span id="demo"></span>.</h4>
 
-  <script>
-  document.getElementById("demo").innerHTML = document.lastModified;
-  </script>
 
 </body>
 
