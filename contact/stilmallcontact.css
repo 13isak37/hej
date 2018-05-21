@@ -1,24 +1,42 @@
 body {
     background-image: url("wood.jpg");
     background-size: 80%;
+    margin: 0;
 }
 
-}
 p {
     color: White;
 }
 
+h1 {
+  color: white;
+  font-size: 70px;
+  margin-top: 50px;
+  text-shadow: 2px 2px black;
+}
 
+h2 {
+color: white;
+}
+
+h3 {
+color: white;
+font-size: 25px;
+}
+
+h4 {
+  color: White;
+  position:absolute;
+    bottom:0;
+    right:0;
+
+}
 
 * {
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-}
 
-/* Add a black background color to the top navigation */
 .topnav {
     background-color: black;
     overflow: hidden;
@@ -27,7 +45,6 @@ body {
     top: 0;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
     float: left;
     display: block;
@@ -38,25 +55,17 @@ body {
     font-size: 17px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
   }
 
-h1 {
-  color: white;
-  font-size: 70px;
-  margin-top: 50px;
 
-
-}
 
 .flex-container {
   display:flex;
@@ -77,21 +86,35 @@ h1 {
     margin: 40px;
 }
 
-h2 {
+input[type=text] {
+  padding: 12px 20px;
+ margin: 8px 0;
+ display: inline-block;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ box-sizing: border-box;
+ -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
 
-color: white;
-
-
+    input[type=text]:focus {
+    width: 30%;
 }
 
-p {
-color: white;
-
-
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
-div.HCB_comment_box {
-    position: absolute;
-    bottom: 70px;
 
-  
+input[type=name] {
+  color: white;
+}
+
+.email {
+  color: white;
 }

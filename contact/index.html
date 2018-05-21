@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!-- i head finns information om sidan meta data -->
 
 <head>
 
@@ -14,27 +13,18 @@
 
 </head>
 
-<!-- Det som syns skriver vi i body -->
+
 
 
 
 
   <div class="topnav">
       <a href="../index.html">Home</a>
-    <a href="https://soundcloud.com/isak-larsson-14">My Soundcloud</a>
+    <a href="../media/index.html">Lifestyle</a>
     <a href="index.html">Contact</a>
-    <a href="../lifestyle/index.html">Lifestyle</a>
     <a href="https://www.youtube.com/watch?v=tu5GxgUh_ow">Song Of The Week</a>
-      <a href="../Tour/index.html">Tour</a>
+      <a href="../about/index.html">About</a>
 </div>
-
-
-
-<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
-<link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-<script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24MjVRYSEpTkGGEjMkPLfb6%2F"+"&opts=16862&num=10&ts=1510648839325");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
-
-
 
   <center> <h1>Contact</h1> </center>
 
@@ -49,8 +39,26 @@
 
 </div>
 
+<h3>Send e-mail to Isak Aspen:</h3>
 
+<div class= "email">
+<form action="mailto:isak@kammarberg.se" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Message:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+</div>
 
+<h4>This document was last modified <span id="demo"></span>.</h4>
+
+<script>
+document.getElementById("demo").innerHTML = document.lastModified;
+</script>
 
 </body>
 
