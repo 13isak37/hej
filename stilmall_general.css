@@ -62,7 +62,8 @@ h4 {
 .navbar a:hover,
 .dropdown:hover .dropbtn,
 .dropbtn:focus {
-	background-color: red;
+	background-color: white;
+	color: black;
 }
 
 .dropdown-content {
